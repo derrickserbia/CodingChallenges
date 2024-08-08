@@ -15,6 +15,7 @@ public class LeetCodeSolutionFactory : ILeetCodeSolutionFactory
         {14, () => new LongestCommonPrefixSolution()},
         {20, () => new ValidParenthesesSolution()},
         {21, () => new MergeTwoSortedListsSolution()},
+        {26, () => new RemoveDuplicateFromSortedArraySolution()},
     };
     public ILeetCodeSolution CreateSolution(int problemNumber)
     {

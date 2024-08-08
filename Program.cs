@@ -6,7 +6,7 @@ class Program
     {
         var factory = new LeetCodeSolutionFactory();
 
-        var problemSolver = factory.CreateSolution(21);
+        var problemSolver = factory.CreateSolution(26);
         problemSolver.SolveProblem();
 
     }
