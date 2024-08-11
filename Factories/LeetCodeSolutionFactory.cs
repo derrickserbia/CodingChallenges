@@ -16,6 +16,7 @@ public class LeetCodeSolutionFactory : ILeetCodeSolutionFactory
         {20, () => new ValidParenthesesSolution()},
         {21, () => new MergeTwoSortedListsSolution()},
         {26, () => new RemoveDuplicateFromSortedArraySolution()},
+        {410 , () => new WeeklyContest410Solution()}
     };
     public ILeetCodeSolution CreateSolution(int problemNumber)
     {
