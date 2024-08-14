@@ -1,4 +1,3 @@
-using System.Globalization;
 using CodingChallenges.Solutions;
 
 class RemoveElementSolution : ILeetCodeSolution
