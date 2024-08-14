@@ -1,4 +1,4 @@
-using CodingChallenges.Solutions;
+using CodingChallenges.Solutions.Interfaces;
 
 class WeeklyContest410Solution : ILeetCodeSolution
 {

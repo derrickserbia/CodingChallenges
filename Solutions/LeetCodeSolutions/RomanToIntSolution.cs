@@ -1,4 +1,4 @@
-using CodingChallenges.Solutions;
+using CodingChallenges.Solutions.Interfaces;
 
 class RomanToIntSolution : ILeetCodeSolution
 {

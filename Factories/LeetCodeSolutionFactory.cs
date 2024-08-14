@@ -1,9 +1,9 @@
 using CodingChallenges.Factories;
-using CodingChallenges.Solutions;
+using CodingChallenges.Solutions.Interfaces;
 
 namespace CodingChallenges;
 
-public class LeetCodeSolutionFactory : ILeetCodeSolutionFactory
+public class LeetCodeSolutionFactory : ICodingChallengeSolutionFactory
 {
     private readonly Dictionary<int, Func<ILeetCodeSolution>> _solutions = new()
     {
@@ -21,7 +21,7 @@ public class LeetCodeSolutionFactory : ILeetCodeSolutionFactory
         {35, () => new SearchInsertSolution()},
         {410 , () => new WeeklyContest410Solution()}
     };
-    public ILeetCodeSolution CreateSolution(int problemNumber)
+    public ICodingChallengeSolution CreateSolution(int problemNumber)
     {
         return _solutions.TryGetValue(problemNumber, out var factory)
         ? factory()

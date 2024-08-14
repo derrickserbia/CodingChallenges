@@ -1,5 +1,5 @@
 using System.Collections;
-using CodingChallenges.Solutions;
+using CodingChallenges.Solutions.Interfaces;
 
 class RemoveDuplicateFromSortedArraySolution : ILeetCodeSolution
 {
