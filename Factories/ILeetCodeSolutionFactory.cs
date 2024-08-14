@@ -1,6 +1,6 @@
-using LeetCode.Solutions;
+using CodingChallenges.Solutions;
 
-namespace LeetCode.Factories;
+namespace CodingChallenges.Factories;
 
 public interface ILeetCodeSolutionFactory
 {

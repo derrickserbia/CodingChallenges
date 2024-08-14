@@ -1,5 +1,5 @@
 using System.Globalization;
-using LeetCode.Solutions;
+using CodingChallenges.Solutions;
 
 class RemoveElementSolution : ILeetCodeSolution
 {

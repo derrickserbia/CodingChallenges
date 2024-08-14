@@ -1,5 +1,5 @@
 using System.Runtime.CompilerServices;
-using LeetCode.Solutions;
+using CodingChallenges.Solutions;
 
 class AddTwoNumbersSolution : ILeetCodeSolution
 {

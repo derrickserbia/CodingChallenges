@@ -1,4 +1,4 @@
-using LeetCode.Solutions;
+using CodingChallenges.Solutions;
 using Microsoft.VisualBasic;
 
 class ValidParenthesesSolution : ILeetCodeSolution

@@ -1,4 +1,4 @@
-using LeetCode.Solutions;
+using CodingChallenges.Solutions;
 
 class IsPalindromeSolution : ILeetCodeSolution
 {

@@ -1,5 +1,5 @@
 using System.Security.Cryptography.X509Certificates;
-using LeetCode.Solutions;
+using CodingChallenges.Solutions;
 
 class LongestCommonPrefixSolution : ILeetCodeSolution
 {

@@ -1,5 +1,5 @@
 using System.Formats.Asn1;
-using LeetCode.Solutions;
+using CodingChallenges.Solutions;
 
 class SearchInsertSolution : ILeetCodeSolution
 {

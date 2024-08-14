@@ -1,5 +1,5 @@
 using System.Collections;
-using LeetCode.Solutions;
+using CodingChallenges.Solutions;
 
 class RemoveDuplicateFromSortedArraySolution : ILeetCodeSolution
 {

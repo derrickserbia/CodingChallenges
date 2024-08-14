@@ -1,4 +1,4 @@
-namespace LeetCode.Solutions;
+namespace CodingChallenges.Solutions;
 
 public interface ILeetCodeSolution
 {

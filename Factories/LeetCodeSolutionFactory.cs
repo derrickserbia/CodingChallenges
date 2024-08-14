@@ -1,7 +1,7 @@
-using LeetCode.Factories;
-using LeetCode.Solutions;
+using CodingChallenges.Factories;
+using CodingChallenges.Solutions;
 
-namespace LeetCode;
+namespace CodingChallenges;
 
 public class LeetCodeSolutionFactory : ILeetCodeSolutionFactory
 {
