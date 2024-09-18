@@ -21,6 +21,7 @@ public class SolutionFactory : ISolutionFactory
         {28, () => new StrStrSolution()},
         {35, () => new SearchInsertSolution()},
         {410 , () => new WeeklyContest410Solution()},
+        {605, () => new CanPlaceFlowersSolution()},
         {1431, () => new KidsWithCandiesSolution()},
         {1768, () => new MergeStringsAlternatelySolution()}
     };
