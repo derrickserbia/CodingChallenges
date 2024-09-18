@@ -19,39 +19,43 @@ class LengthOfLongestSubstringSolution : ILeetCodeSolution
         s = "aba";
         Console.WriteLine("string=[{0}]. LengthOfLongestSubstring=[{1}]", s, LengthOfLongestSubstring(s).ToString());
 
+        s = "aabaab!bb";
+        Console.WriteLine("string=[{0}]. LengthOfLongestSubstring=[{1}]", s, LengthOfLongestSubstring(s).ToString());
+
     }
 
     private int LengthOfLongestSubstring(string s)
     {
-        var maxLenght = 0;
-        if (s.Length == 0)
-            return maxLenght;
+        int maxLength = 0;
+        if (s.Length == 0) return maxLength;
 
-        maxLenght++; // by this point maxLength will be at least 1
-        var leftIndex = 0;
-        var rightIndex = leftIndex + 1; // what if string is a?
+        int i = 0, j = 1;
 
-        var set = new HashSet<char>() { s[leftIndex] }; //initialize with the first character
+        var chars = new HashSet<char> { s[i] };
+        maxLength = chars.Count;
 
-        // stop once the right index reaches the end of the string
-        while (rightIndex < s.Length)
+        while (j < s.Length)
         {
-            // check if rightIndex character is in the set
-            // if it is in the set, we have reached the end of the substring
-            // if not, add the char to the set and keep increasing the right index
-            if (set.Contains(s[leftIndex]))
+            if (chars.Contains(s[j]))
             {
-                maxLenght = ((rightIndex - leftIndex) > maxLenght) ? (rightIndex - leftIndex) : maxLenght;
-                set.Remove(s[leftIndex++]);
-                rightIndex++;
+                if (s[i] != s[j])
+                {
+                    chars.Remove(s[i++]);
+                }
+                else
+                {
+                    i++;
+                    j++;
+                }
             }
             else
             {
-                set.Add(s[rightIndex++]);
-                maxLenght++;
+                chars.Add(s[j++]);
+                maxLength = chars.Count > maxLength ? chars.Count : maxLength;
             }
         }
 
-        return maxLenght;
+
+        return maxLength;
     }
 }
