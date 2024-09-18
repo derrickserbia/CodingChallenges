@@ -10,6 +10,7 @@ public class SolutionFactory : ISolutionFactory
         {1, () => new TwoSumSolution() },
         {2, () => new AddTwoNumbersSolution()},
         {3, () => new LengthOfLongestSubstringSolution()},
+        {5, () => new LongestPalindromicSubstringSolution()},
         {9, () => new IsPalindromeSolution()},
         {13, () => new RomanToIntSolution()},
         {14, () => new LongestCommonPrefixSolution()},
@@ -19,7 +20,9 @@ public class SolutionFactory : ISolutionFactory
         {27, () => new RemoveElementSolution()},
         {28, () => new StrStrSolution()},
         {35, () => new SearchInsertSolution()},
-        {410 , () => new WeeklyContest410Solution()}
+        {410 , () => new WeeklyContest410Solution()},
+        {1431, () => new KidsWithCandiesSolution()},
+        {1768, () => new MergeStringsAlternatelySolution()}
     };
 
     private readonly Dictionary<int, Func<ICodingChallengeSolution>> _neetCodeSolutions = new()
